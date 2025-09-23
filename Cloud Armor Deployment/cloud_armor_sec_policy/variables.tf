@@ -22,7 +22,11 @@ variable "default_rules" {
         })
     )
 } 
-
+variable "adaptive_protection_enabled" {
+  type        = bool
+  description = "Enable adaptive protection"
+  default     = false
+}
 # --------------------------------- 
 # Throttling traffic rules
 # --------------------------------- 

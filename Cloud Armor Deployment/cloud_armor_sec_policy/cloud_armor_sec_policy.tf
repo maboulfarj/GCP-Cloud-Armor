@@ -11,7 +11,15 @@ resource "google_compute_security_policy" "sec-policy" {
         json_parsing = var.json_parsing
     }
 
-    
+# # --------------------------------- 
+# # Adaptive policy
+# # ---------------------------------    
+
+adaptive_protection_config {
+  layer_7_ddos_defense_config {
+    enable = var.adaptive_protection_enabled
+  }
+}
 # # --------------------------------- 
 # # Default rules
 # # --------------------------------- 
