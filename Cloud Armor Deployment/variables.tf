@@ -1,6 +1,7 @@
 variable "project_id" {
   type = string
-  description = "The project id"  
+  description = "The project id"
+  default = "empca-sre-sint-sandbox"
 }
 
 variable "log_level"{
