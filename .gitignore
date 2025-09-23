@@ -7,7 +7,7 @@
 *.lock.hcl
 # Crash log files
 crash.log
-
+GCP_LOGIN_CONFIG_FILE
 # Ignore any .tfvars files that are generated automatically for each Terraform run. Most
 # .tfvars files are managed as part of configuration and so should be included in
 # version control.
