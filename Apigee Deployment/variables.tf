@@ -7,7 +7,7 @@ variable "project_id" {
 variable "analytics_region" {
   description = "Apigee Analytics region (e.g., us-central1)"
   type        = string
-  default = "canada-east"
+  default = "northamerica-northeast1"
 }
 
 variable "environment_name" {
