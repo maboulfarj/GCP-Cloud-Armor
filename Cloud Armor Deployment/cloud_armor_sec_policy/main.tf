@@ -49,30 +49,7 @@ resource "google_compute_security_policy" "sec-policy" {
   }
 
 
-  #     dynamic "rule" {
-  #         for_each = var.throttle_rules
-  #         content {
-  #             action      = rule.value.action
-  #             priority    = rule.value.priority
-  #             description = rule.value.description
-  #             preview     = rule.value.preview
-  #             match {
-  #                 versioned_expr = rule.value.versioned_expr
-  #                 config {
-  #                     src_ip_ranges = rule.value.src_ip_ranges
-  #                 }
-  #             }
-  #             rate_limit_options {
-  #                 conform_action  = rule.value.conform_action
-  #                 exceed_action   = rule.value.exceed_action
-  #                 enforce_on_key  = rule.value.enforce_on_key
-  #                 rate_limit_threshold {
-  #                     count           = rule.value.rate_limit_threshold_count
-  #                     interval_sec    = rule.value.rate_limit_threshold_interval_sec
-  #                 }
-  #             } 
-  #         }
-  #     }
+  
 
 
   dynamic "rule" {
