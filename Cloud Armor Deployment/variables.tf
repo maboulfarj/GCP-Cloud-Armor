@@ -7,8 +7,7 @@ variable "project_id" {
 variable "log_level" {
   type        = string
   description = "Log Level"
-  default     = "NORMAL" #Options are VERBOSE or NORMAL
-  # https://cloud.google.com/armor/docs/request-logging#verbose-logging
+  default     = "NORMAL" 
 }
 
 variable "json_parsing" {
