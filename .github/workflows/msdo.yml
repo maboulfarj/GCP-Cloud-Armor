@@ -23,6 +23,8 @@ jobs:
       - name: Run Microsoft Security DevOps
         id: msdo
         uses: microsoft/security-devops-action@latest
+        with:
+          tools: checkov,terrascan,trivy,templateanalyzer
 
       - name: Upload SARIF to GitHub Code Scanning
         uses: github/codeql-action/upload-sarif@v4
