@@ -196,9 +196,9 @@ variable "cves_and_vulnerabilities_rules" {
       action      = "deny(403)"
       priority    = "2000"
       description = "Apache Log4j CVE-2021-44228"
-      preview     = true
+      preview     = false
 
-      expression = "evaluatePreconfiguredWaf('cve-canary', {'sensitivity': 3})"
+      expression = "evaluatePreconfiguredWaf('cve-canary')"
     }
     rule_json_sqli = {
       action      = "deny(403)"
