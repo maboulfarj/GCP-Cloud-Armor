@@ -37,7 +37,6 @@ resource "google_compute_security_policy" "sec-policy" {
     content {
       action      = rule.value.action
       priority    = rule.value.priority
-      description = rule.value.description
       preview     = rule.value.preview
       match {
         versioned_expr = rule.value.versioned_expr
